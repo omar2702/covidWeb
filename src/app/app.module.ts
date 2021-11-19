@@ -9,7 +9,11 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {HomeComponent} from "./home/home.component";
 import {HistoricComponent} from "./historic/historic.component";
 import {TestComponent} from "./test/test.component";
-import { MaterialModule } from './material/material.module';
+import {MatTableModule} from "@angular/material/table";
+import { NavigationComponent } from './navigation/navigation.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatIconModule} from "@angular/material/icon";
+import {MatFormFieldModule} from "@angular/material/form-field";
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +21,17 @@ import { MaterialModule } from './material/material.module';
     HomeComponent,
     HistoricComponent,
     TestComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
-    MaterialModule,
+    MatTableModule,
+    MatCardModule,
+    MatIconModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
