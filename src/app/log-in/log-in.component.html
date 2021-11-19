@@ -10,7 +10,7 @@
             matInput
             placeholder="Username"
             required
-          />
+          >
           <mat-error>
           </mat-error>
         </mat-form-field>
@@ -21,17 +21,15 @@
             matInput
             placeholder="Password"
             required
-          />
+          >
           <mat-error>
           </mat-error>
         </mat-form-field>
-        <button mat-button (click)="navigateToHome()"
+        <button mat-raised-button color="primary" (click)="navigateToHome()"
           [disabled]
           type="submit"
           mat-raised-button
-          color="primary"
-        >
-          Login
+         >Login
         </button>
       </form>
     </mat-card-content>
