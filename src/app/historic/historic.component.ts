@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Form } from '../models/data'
-import {DataApiService} from "../ApiService/Api_service";
+import {Form, Result} from '../models/data'
+import {DataApiService} from "../service/Api_service";
+import {isElementScrolledOutsideView} from "@angular/cdk/overlay/position/scroll-clip";
 
 export interface PeriodicElement {
   name: string;
@@ -17,14 +18,16 @@ export interface PeriodicElement {
   styleUrls: ['./historic.component.css']
 })
 export class HistoricComponent implements OnInit {
-  elements :  Form[] = [];
+  elements :  Result[] = [];
 
   constructor(private data : DataApiService) { }
 
   ngOnInit(): void {
-    this.data.getAllData()
-      .subscribe( (data: Form[]) => {
+    this.data.getAllData(1)
+      .subscribe( (data: any) => {
         this.elements = data
+        //console.log(data)
+        console.log(this.elements)
       });
   }
 
@@ -33,6 +36,6 @@ export class HistoricComponent implements OnInit {
     console.log(this.elements)
   }
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['tos', 'cefalea', 'nasal', 'respiratoria', 'Garganta'];
 
 }

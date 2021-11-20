@@ -4,30 +4,30 @@
   <!-- Position Column -->
   <ng-container matColumnDef="tos">
     <th mat-header-cell *matHeaderCellDef> ¿Tos? </th>
-    <td mat-cell *matCellDef="let element"> {{element.tos}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.form.tos}} </td>
   </ng-container>
 
   <!-- Tos Column -->
   <ng-container matColumnDef="cefalea">
     <th mat-header-cell *matHeaderCellDef> ¿Cefalea? </th>
-    <td mat-cell *matCellDef="let element"> {{element.cefalea}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.form.cafelea}} </td>
   </ng-container>
 
   <!-- Cefalea Column -->
   <ng-container matColumnDef="nasal">
     <th mat-header-cell *matHeaderCellDef> ¿Cong_nasal?</th>
-    <td mat-cell *matCellDef="let element"> {{element.nasal}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.form.nasal}} </td>
   </ng-container>
 
   <!-- Cefalea Column -->
   <ng-container matColumnDef="respiratoria">
     <th mat-header-cell *matHeaderCellDef> ¿Dif_Respiratoria? </th>
-    <td mat-cell *matCellDef="let element"> {{element.nasal}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.form.nasal}} </td>
   </ng-container>
 
   <ng-container matColumnDef="Garganta">
     <th mat-header-cell *matHeaderCellDef> ¿Garganta? </th>
-    <td mat-cell *matCellDef="let element"> {{element.garganta}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.form.garganta}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
