@@ -36,6 +36,5 @@ export class HistoricComponent implements OnInit {
     console.log(this.elements)
   }
 
-  displayedColumns: string[] = ['tos', 'cefalea', 'nasal', 'respiratoria', 'Garganta'];
-
+  displayedColumns: string[] = ['tos', 'cefalea', 'nasal', 'respiratoria', 'Garganta', 'Fiebre', 'Diarrea', 'Nauseas', 'nosmia Hiposmia', 'Abodomen', 'Articulaciones', 'Muscular', 'Pecho', 'Otros', 'Semanas'];
 }
