@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import {LogInComponent} from "./log-in/log-in.component";
 import {MatToolbarModule} from "@angular/material/toolbar";
-import {HomeComponent} from "./home/home.component";
 import {HistoricComponent} from "./historic/historic.component";
 import {TestComponent} from "./test/test.component";
 import {MatTableModule} from "@angular/material/table";
@@ -20,7 +19,6 @@ import {MatButtonModule} from "@angular/material/button";
   declarations: [
     AppComponent,
     LogInComponent,
-    HomeComponent,
     HistoricComponent,
     TestComponent,
     NavigationComponent,

@@ -17,3 +17,7 @@ button {
 .separator {
   margin-bottom: 2rem;
 }
+
+section {
+  display: table;
+}
