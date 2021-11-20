@@ -1,31 +1,33 @@
 <app-navigation></app-navigation>
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
+<table mat-table [dataSource]="elements" class="mat-elevation-z8">
 
   <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  <ng-container matColumnDef="tos">
+    <th mat-header-cell *matHeaderCellDef> ¿Tos? </th>
+    <td mat-cell *matCellDef="let element"> {{element.tos}} </td>
   </ng-container>
 
-  <!-- Name Column -->
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  <!-- Tos Column -->
+  <ng-container matColumnDef="cefalea">
+    <th mat-header-cell *matHeaderCellDef> ¿Cefalea? </th>
+    <td mat-cell *matCellDef="let element"> {{element.cefalea}} </td>
   </ng-container>
 
-  <!-- Weight Column -->
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> Weight </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- Cefalea Column -->
+  <ng-container matColumnDef="nasal">
+    <th mat-header-cell *matHeaderCellDef> ¿Cong_nasal?</th>
+    <td mat-cell *matCellDef="let element"> {{element.nasal}} </td>
   </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
-    <th mat-header-cell *matHeaderCellDef> Symbol </th>
-    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  <!-- Cefalea Column -->
+  <ng-container matColumnDef="respiratoria">
+    <th mat-header-cell *matHeaderCellDef> ¿Dif_Respiratoria? </th>
+    <td mat-cell *matCellDef="let element"> {{element.nasal}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Garganta">
+    <th mat-header-cell *matHeaderCellDef> ¿Garganta? </th>
+    <td mat-cell *matCellDef="let element"> {{element.garganta}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
